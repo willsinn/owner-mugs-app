@@ -1,0 +1,6 @@
+<h1>All Mugs Index</h1>
+<ul>
+  <%@mugs.each do |mug|%>
+  <li> <%=link_to mug.name, mug_path(mug) %></li>
+  <%end%>
+</ul>
